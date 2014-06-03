@@ -122,9 +122,4 @@ devmem2 0x480ab060 w 0x7070003
 
 echo end init...
 #sleep 60
-sleep 5
-echo "" > /data/video/log_autoconnectwpa
-echo "AUTOCONNECTWPA:" >> /data/video/log_autoconnectwpa
-ifconfig >> /data/video/log_autoconnectwpa
-iwconfig ath0 >> /data/video/log_autoconnectwpa
 /data/video/autoconnectwpa.sh >> /data/video/log_autoconnectwpa

@@ -1,5 +1,11 @@
 #!/bin/sh
-
+#wait a little for background stuff to finish
+sleep 5
+echo "" 
+echo "AUTOCONNECTWPA:"
+ifconfig 
+iwconfig ath0
+echo ""
 #
 #ardrone2 autoconnect 2 configured wpa2 network
 # if it fails, go back to standard mode by calling /bin/wifi_setup.sh
